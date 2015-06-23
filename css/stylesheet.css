@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400);
+@import url(../css/impress-demo.css);
+@font-face {
+  font-family: 'painters_grotesqueBlkCn';
+  src: url('../webfonts/PaintersGrotesque-BlackCondensed-webfont.eot');
+  src: url('../webfonts/PaintersGrotesque-BlackCondensed-webfont.eot?#iefix') format('embedded-opentype'), url('../webfonts/PaintersGrotesque-BlackCondensed-webfont.woff2') format('woff2'), url('../webfonts/PaintersGrotesque-BlackCondensed-webfont.woff') format('woff'), url('../webfonts/PaintersGrotesque-BlackCondensed-webfont.ttf') format('truetype'), url('../webfonts/PaintersGrotesque-BlackCondensed-webfont.svg#painters_grotesqueBlkCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #f7f5df;
+}
+body .step img.slide-image {
+  position: absolute;
+  width: 600px;
+  height: auto;
+  right: -50px;
+  top: 15%;
+  border-radius: 50%;
+  border: 17px solid #f7f5df;
+}
+body .step img.slide-image.left-image {
+  left: -50px;
+}
+body .step h2 {
+  font-size: 1.1em;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 12%;
+  padding: 25px 35px;
+  background: #0c2629;
+  color: #f7f5df;
+  font-family: "painters_grotesqueBlkCn";
+  border: 17px solid #f7f5df;
+  margin-left: -17px;
+  border-right: 0px;
+  z-index: 1001;
+}
+body .step h2:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 49px;
+  height: 120%;
+  top: -18px;
+  left: 100%;
+  background: url("../images/triangle.png") no-repeat;
+  background-size: 100% 100%;
+}
+body .step .text-summary {
+  display: block;
+  width: 800px;
+  padding: 30px 45px;
+  background: #f7f5df;
+  border: 20px solid #ffffff;
+  text-align: center;
+}
+body .step .text-summary h3 {
+  font-family: "painters_grotesqueBlkCn";
+  margin-bottom: 10px;
+}
+body .step .text-summary p {
+  font-size: .7em;
+}
+body .step.active {
+  z-index: 1000;
+}
+body .step.past .text-summary,
+body .step.future .text-summary {
+  display: none;
+}
+body .step.past h2,
+body .step.future h2 {
+  display: none !important;
+}
+body .step.past img.slide-image,
+body .step.future img.slide-image {
+  display: none !important;
+}
+body .step.panel {
+  padding: 100px;
+}
+body .step img.background {
+  margin: 0 auto;
+  display: block;
+  max-height: 100%;
+}
+body #board-game {
+  background: #ff3b5c;
+  width: 1600px;
+}
